@@ -5,6 +5,27 @@ header{
         font-size: 26px;
     }
 
+
+    .nav{
+        float: right;
+        list-style: none;
+
+
+        li{
+            display: inline;
+            margin-left: 25px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: opacity 500ms ease;
+        }
+
+        li:hover{
+            opacity: 0.8;
+        }
+    }
+
+
     .presentation{
         margin: 50px 0;
         background: url(./../../image/neonlight.jpg) no-repeat;
@@ -15,6 +36,7 @@ header{
         background-blend-mode: multiply;
         background-color: cyan;
         position: relative;
+        border-radius: 30px;
     }
 
 
