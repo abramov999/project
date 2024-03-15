@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "./Item.module.scss"
+import styles from "./Orders.module.scss";
+import { TiDelete } from "react-icons/ti";
 
-export default function Item(props){
+export default function Orders(props){
     return(
         <div className={styles.item}>
             <img src={"./images/"+props.item.img} alt="Error"/>
             <h2>{props.item.title}</h2>
-            <p>{props.item.desc}</p>
             <b>{props.item.price}$</b>
-            <div className={styles.addToCart} onClick={()=>props.onAdd(props.item)}>+</div>
+            <TiDelete onClick={()=>props.onDelete(props.item.id)} className={styles.deleteIcon}/>
         </div>
-    )
+    );
 }
