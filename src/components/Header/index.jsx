@@ -11,7 +11,7 @@ const showOrders = (props) => {
         {props.orders.map(el => (
             <Orders onDelete={props.onDelete} key={el.id} item={el} />
         ))}
-        <p className={styles.summa}>Итого:{new Intl.NumberFormat().format(summa)}$</p>
+        <p className={styles.summa}>Итого: {new Intl.NumberFormat().format(summa)}$</p>
         </div>
     );
 }
